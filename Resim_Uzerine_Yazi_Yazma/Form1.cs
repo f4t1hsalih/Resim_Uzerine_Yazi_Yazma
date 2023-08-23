@@ -29,5 +29,12 @@ namespace Resim_Uzerine_Yazi_Yazma
             gr.DrawString(txtMetin.Text, new Font("Segoe UI", Convert.ToInt16(txtBoyut.Text), FontStyle.Bold), new SolidBrush(renk), 20, 30);
             pictureBox1.Image = bmp;
         }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "Resim|.jpg";
+            saveFileDialog1.ShowDialog();
+            bmp.Save(saveFileDialog1.FileName);
+        }
     }
 }

@@ -85,6 +85,7 @@
             btnKaydet.TabIndex = 3;
             btnKaydet.Text = "Kaydet";
             btnKaydet.UseVisualStyleBackColor = true;
+            btnKaydet.Click += btnKaydet_Click;
             // 
             // label1
             // 
