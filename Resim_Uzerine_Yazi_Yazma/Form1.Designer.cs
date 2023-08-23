@@ -72,8 +72,9 @@
             btnYazdir.Name = "btnYazdir";
             btnYazdir.Size = new Size(163, 36);
             btnYazdir.TabIndex = 2;
-            btnYazdir.Text = "Yazır";
+            btnYazdir.Text = "Yazdır";
             btnYazdir.UseVisualStyleBackColor = true;
+            btnYazdir.Click += btnYazdir_Click;
             // 
             // btnKaydet
             // 
@@ -125,7 +126,7 @@
             pictureBox1.Location = new Point(199, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(339, 236);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
