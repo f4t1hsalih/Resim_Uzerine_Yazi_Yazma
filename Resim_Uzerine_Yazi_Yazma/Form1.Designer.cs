@@ -35,12 +35,13 @@
             label1 = new Label();
             label2 = new Label();
             txtMetin = new TextBox();
-            txtBoyut = new TextBox();
             pictureBox1 = new PictureBox();
             openFileDialog1 = new OpenFileDialog();
             saveFileDialog1 = new SaveFileDialog();
             colorDialog1 = new ColorDialog();
+            numericUpDown1 = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
             // btnRenkSec
@@ -114,13 +115,6 @@
             txtMetin.Size = new Size(100, 29);
             txtMetin.TabIndex = 6;
             // 
-            // txtBoyut
-            // 
-            txtBoyut.Location = new Point(75, 219);
-            txtBoyut.Name = "txtBoyut";
-            txtBoyut.Size = new Size(100, 29);
-            txtBoyut.TabIndex = 7;
-            // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -135,6 +129,13 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(75, 219);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(100, 29);
+            numericUpDown1.TabIndex = 9;
+            // 
             // Form1
             // 
             AcceptButton = btnKaydet;
@@ -142,8 +143,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(65, 75, 89);
             ClientSize = new Size(560, 270);
+            Controls.Add(numericUpDown1);
             Controls.Add(pictureBox1);
-            Controls.Add(txtBoyut);
             Controls.Add(txtMetin);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -158,6 +159,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Resmin Üzerine Yazı Yazma";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -171,10 +173,10 @@
         private Label label1;
         private Label label2;
         private TextBox txtMetin;
-        private TextBox txtBoyut;
         private PictureBox pictureBox1;
         private OpenFileDialog openFileDialog1;
         private SaveFileDialog saveFileDialog1;
         private ColorDialog colorDialog1;
+        private NumericUpDown numericUpDown1;
     }
 }
