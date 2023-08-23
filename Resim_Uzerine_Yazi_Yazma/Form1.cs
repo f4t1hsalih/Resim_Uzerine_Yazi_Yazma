@@ -6,5 +6,8 @@ namespace Resim_Uzerine_Yazi_Yazma
         {
             InitializeComponent();
         }
+
+        string resim;
+
     }
 }

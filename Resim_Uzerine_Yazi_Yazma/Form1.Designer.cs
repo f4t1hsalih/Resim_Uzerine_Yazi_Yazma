@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnRenkSec = new Button();
+            btnResimSec = new Button();
+            btnYazdir = new Button();
+            btnKaydet = new Button();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtMetin = new TextBox();
+            txtBoyut = new TextBox();
             pictureBox1 = new PictureBox();
             openFileDialog1 = new OpenFileDialog();
             saveFileDialog1 = new SaveFileDialog();
@@ -43,45 +43,45 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnRenkSec
             // 
-            button1.ForeColor = Color.FromArgb(56, 52, 67);
-            button1.Location = new Point(12, 54);
-            button1.Name = "button1";
-            button1.Size = new Size(163, 36);
-            button1.TabIndex = 0;
-            button1.Text = "Renk Seç";
-            button1.UseVisualStyleBackColor = true;
+            btnRenkSec.ForeColor = Color.FromArgb(56, 52, 67);
+            btnRenkSec.Location = new Point(12, 54);
+            btnRenkSec.Name = "btnRenkSec";
+            btnRenkSec.Size = new Size(163, 36);
+            btnRenkSec.TabIndex = 1;
+            btnRenkSec.Text = "Renk Seç";
+            btnRenkSec.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnResimSec
             // 
-            button2.ForeColor = Color.FromArgb(56, 52, 67);
-            button2.Location = new Point(12, 12);
-            button2.Name = "button2";
-            button2.Size = new Size(163, 36);
-            button2.TabIndex = 1;
-            button2.Text = "Resim Seç";
-            button2.UseVisualStyleBackColor = true;
+            btnResimSec.ForeColor = Color.FromArgb(56, 52, 67);
+            btnResimSec.Location = new Point(12, 12);
+            btnResimSec.Name = "btnResimSec";
+            btnResimSec.Size = new Size(163, 36);
+            btnResimSec.TabIndex = 0;
+            btnResimSec.Text = "Resim Seç";
+            btnResimSec.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnYazdir
             // 
-            button3.ForeColor = Color.FromArgb(56, 52, 67);
-            button3.Location = new Point(12, 96);
-            button3.Name = "button3";
-            button3.Size = new Size(163, 36);
-            button3.TabIndex = 2;
-            button3.Text = "Yazır";
-            button3.UseVisualStyleBackColor = true;
+            btnYazdir.ForeColor = Color.FromArgb(56, 52, 67);
+            btnYazdir.Location = new Point(12, 96);
+            btnYazdir.Name = "btnYazdir";
+            btnYazdir.Size = new Size(163, 36);
+            btnYazdir.TabIndex = 2;
+            btnYazdir.Text = "Yazır";
+            btnYazdir.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnKaydet
             // 
-            button4.ForeColor = Color.FromArgb(56, 52, 67);
-            button4.Location = new Point(12, 138);
-            button4.Name = "button4";
-            button4.Size = new Size(163, 36);
-            button4.TabIndex = 3;
-            button4.Text = "Kaydet";
-            button4.UseVisualStyleBackColor = true;
+            btnKaydet.ForeColor = Color.FromArgb(56, 52, 67);
+            btnKaydet.Location = new Point(12, 138);
+            btnKaydet.Name = "btnKaydet";
+            btnKaydet.Size = new Size(163, 36);
+            btnKaydet.TabIndex = 3;
+            btnKaydet.Text = "Kaydet";
+            btnKaydet.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -103,19 +103,19 @@
             label2.TabIndex = 5;
             label2.Text = "Boyut: ";
             // 
-            // textBox1
+            // txtMetin
             // 
-            textBox1.Location = new Point(75, 184);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 29);
-            textBox1.TabIndex = 6;
+            txtMetin.Location = new Point(75, 184);
+            txtMetin.Name = "txtMetin";
+            txtMetin.Size = new Size(100, 29);
+            txtMetin.TabIndex = 6;
             // 
-            // textBox2
+            // txtBoyut
             // 
-            textBox2.Location = new Point(75, 219);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 29);
-            textBox2.TabIndex = 7;
+            txtBoyut.Location = new Point(75, 219);
+            txtBoyut.Name = "txtBoyut";
+            txtBoyut.Size = new Size(100, 29);
+            txtBoyut.TabIndex = 7;
             // 
             // pictureBox1
             // 
@@ -138,14 +138,14 @@
             BackColor = Color.FromArgb(65, 75, 89);
             ClientSize = new Size(560, 270);
             Controls.Add(pictureBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtBoyut);
+            Controls.Add(txtMetin);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnKaydet);
+            Controls.Add(btnYazdir);
+            Controls.Add(btnResimSec);
+            Controls.Add(btnRenkSec);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(56, 52, 67);
             Margin = new Padding(4);
@@ -159,14 +159,14 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnRenkSec;
+        private Button btnResimSec;
+        private Button btnYazdir;
+        private Button btnKaydet;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtMetin;
+        private TextBox txtBoyut;
         private PictureBox pictureBox1;
         private OpenFileDialog openFileDialog1;
         private SaveFileDialog saveFileDialog1;
