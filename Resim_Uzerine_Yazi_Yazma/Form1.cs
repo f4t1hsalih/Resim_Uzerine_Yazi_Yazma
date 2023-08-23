@@ -7,7 +7,12 @@ namespace Resim_Uzerine_Yazi_Yazma
             InitializeComponent();
         }
 
-        string resim;
+        string resim = "";
 
+        private void btnResimSec_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            resim = openFileDialog1.FileName;
+        }
     }
 }

@@ -62,6 +62,7 @@
             btnResimSec.TabIndex = 0;
             btnResimSec.Text = "Resim Seç";
             btnResimSec.UseVisualStyleBackColor = true;
+            btnResimSec.Click += btnResimSec_Click;
             // 
             // btnYazdir
             // 
@@ -133,6 +134,7 @@
             // 
             // Form1
             // 
+            AcceptButton = btnKaydet;
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(65, 75, 89);
