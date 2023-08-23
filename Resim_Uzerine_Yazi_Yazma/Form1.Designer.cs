@@ -52,6 +52,7 @@
             btnRenkSec.TabIndex = 1;
             btnRenkSec.Text = "Renk Seç";
             btnRenkSec.UseVisualStyleBackColor = true;
+            btnRenkSec.Click += btnRenkSec_Click;
             // 
             // btnResimSec
             // 
